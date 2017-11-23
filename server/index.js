@@ -21,6 +21,7 @@ app.use(bodyParser.json())
 app.post('/search/filter', (req, res) => {
 	//search the api with an array of ingredients
 	apiHelper.apiSearch(req.body.ingredients, (data) => {
+		console.log('--------------', req.body.ingredients)
 		var data = JSON.parse(data);
 		//*******************
 		// db.addTodDb(data, (data) => {res.status(201); res.send(data)})
@@ -32,10 +33,12 @@ app.post('/search/filter', (req, res) => {
 
 app.post('/search', (req, res) => {
 // 	/search - Query DB for recipes by search term
-  db.searchTerm(req.body.search, (data) => {
-  	res.status(201);
-  	res.send(data);
-  })
+  // db.searchTerm(req.body.search, (data) => {
+  // 	res.status(201);
+  // 	res.send(data);
+  // })
+  res.status(201)
+  res.send(req.body.search)
 })
 
 app.get('/grid', (req,res) => {
