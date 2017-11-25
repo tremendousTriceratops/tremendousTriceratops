@@ -6,6 +6,7 @@ import sample_data from './components/sample_data.js';
 import RecipeTile from './components/RecipeTile.jsx';
 import Ingredients from './components/Ingredients.jsx';
 import Information from './components/Information.jsx';
+import Instructions from './components/Instructions.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +16,8 @@ class App extends React.Component {
       data:[],
       listDataFromRecipe:[],
       listDataFromObj:null,
-      isRecipeClicked:false
+      isRecipeClicked:false,
+      isRecipeUrl:''
 
 
     }
@@ -23,10 +25,11 @@ class App extends React.Component {
   }
 
 
-  recipeHandle(data,dataObj){
+  recipeHandle(data,dataObj,url){
     this.setState({
       listDataFromRecipe:data,
       listDataFromObj:dataObj,
+      isRecipeUrl:url,
       isRecipeClicked:true
     });
   }
@@ -37,21 +40,24 @@ class App extends React.Component {
    let ingredient = null;
    let information = null;
    if(isRecipeClicked){
-     ingredient = <Ingredients className='Ingredients' listData={this.state.listDataFromRecipe}  />
+     ingredient = <Ingredients className='Ingredients col-md-4 ' listData={this.state.listDataFromRecipe}  />
      // information = <Information listInfo={this.state.listDataFromObj}/>
    }
 
 
 
     return (
-      <div>
+      <div className='container-fluid'>
 
       <RecipeTile data={sample_data} recipeHandle={this.recipeHandle}/>
       {/* <Ingredients listData={this.state.listDataFromRecipe}  /> */}
-        <div>
+        <div className="container bottom-half">
+          <div className="row">
           {ingredient}
           {/* {information} */}
           <Information className='information' listInfo={this.state.listDataFromObj}/>
+          <Instructions className="instructions" url={this.state.isRecipeUrl} />
+         </div>
         </div>
     </div>
 

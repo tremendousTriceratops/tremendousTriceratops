@@ -2,12 +2,13 @@ import React from 'react';
 
 
 const Ingredients = (props) =>(
-  <div>
+  <div className=".col-md-4 ing-div">
 
-    <ul className="ing-title"> Ingredients
+    <ul className=" list-group ing-title">
+      <h5> Ingredients</h5>
       {props.listData.map((ingredient,i)=>{
 
-        return <li className="ing" key={i}>{ingredient}</li>
+        return <li className=" list-group-item ing" key={i}>{ingredient}</li>
       })}
 
     </ul>
