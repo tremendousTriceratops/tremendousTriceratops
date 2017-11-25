@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const CheckBox = (props) => (
 	<div className="form-check">
 	  <label className="form-check-label">
