@@ -14,9 +14,11 @@ class RecipeTile extends React.Component {
     return(
 
       <div className="container">
+      {console.log('=========', this.props.data)}
         <div className="row tileContainer" >
-        {this.props.data[0].hits.map((item,i)=>{
-             //console.log(item.recipe); //item.recipe.ingredientLines ..
+
+        {this.props.data.map((item,i)=>{
+             //console.log(item.recipe); item.recipe.ingredientLines ..
 
             return(
               <div className="col-xs-2" key={i}>

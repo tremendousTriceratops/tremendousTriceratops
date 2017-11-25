@@ -9,7 +9,7 @@ const apiSearch = (arrayOfIngredients, callback) => {
 	//array of ingredients turned into a string seperated by a comma 
 	const search = arrayOfIngredients.join(',');
 	//GET request to url with search info directly embeded in url 
-	const url = `https://api.edamam.com/search?q=${search}&app_id=${appId}&app_key=${appKey}`
+	const url = `https://api.edamam.com/search?q=${search}&app_id=${appId}&app_key=${appKey}&from=0&to=12`
 	request(url, (err, response, body) => {
 		if(err) {
 			console.log('err', arrayOfIngredients)
