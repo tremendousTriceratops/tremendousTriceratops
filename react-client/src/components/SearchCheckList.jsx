@@ -22,6 +22,8 @@ class SearchBar extends React.Component {
 		this.setState({checked: oldArray});
 	}
 
+
+
 	render() {
 
 	return (
@@ -61,7 +63,7 @@ class SearchBar extends React.Component {
         	<span className="badge badge-primary">Vinegars</span>
         	{this.props.ingredientsList.vinegars.map((el, index) => <CheckBox i = {el} key = {index} boxClicked = {this.boxClicked}/>)}
         </div>
-      <button onClick = {()=> this.props.filterSearch(this.state.checked)} type="button" className="btn btn-primary btn-lg btn-block">Click to search: {this.state.checked.join(', ')} </button>
+      <button onClick = {()=> this.props.filterSearchClicked(this.state.checked)} type="button" className="btn btn-primary btn-lg btn-block">Click to search: {this.state.checked.join(', ')} </button>
 		  </div>
 		</div>
 	)

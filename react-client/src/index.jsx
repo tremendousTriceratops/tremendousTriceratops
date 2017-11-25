@@ -61,8 +61,8 @@ class App extends React.Component {
       data: JSON.stringify(arrayOfIngredients),
       contentType: 'application/json',
       success : (data) => {
-        console.log('success', data)
-        this.setState({data:data})
+        console.log('filter search success', data)
+        // this.setState({data:data})
       }, 
       error: (data) => {
         console.log('err', data)
