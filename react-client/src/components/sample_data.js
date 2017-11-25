@@ -1,4 +1,86 @@
+const updatedSampleData = [{"recipe":
+  {"uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d7dc07bd6b3dade1b846478334b9195f",
+  "label":"Infused Honey","image":"https://www.edamam.com/web-img/69e/69e0df7cfa82cc2a10113c1c36cb2d0d.jpg",
+  "source":"Martha Stewart",
+  "url":"http://www.marthastewart.com/336210/infused-honey",
+  "shareAs":"http://www.edamam.com/recipe/infused-honey-d7dc07bd6b3dade1b846478334b9195f/honey",
+  "yield":4,"dietLabels":["Low-Fat"],"healthLabels":["Vegetarian","Peanut-Free","Tree-Nut-Free",
+  "Alcohol-Free"],"cautions":[],"ingredientLines":["1 cup honey","4 star anise","4 cinnamon sticks"],
+  "ingredients":[{"text":"1 cup honey","weight":339},{"text":"4 star anise","weight":8},{"text":"4 cinnamon sticks",
+  "weight":10.399999618530273}],"calories":1083.2079990577697,"totalWeight":357.3999996185303,
+  "bookmarked":false,"bought":false}},
 
+{"recipe":
+{"uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d7dc07bd6b3dade1b846478334b9195f",
+"label":"Infused Honey","image":"https://www.edamam.com/web-img/69e/69e0df7cfa82cc2a10113c1c36cb2d0d.jpg",
+"source":"Martha Stewart",
+"url":"http://www.marthastewart.com/336210/infused-honey",
+"shareAs":"http://www.edamam.com/recipe/infused-honey-d7dc07bd6b3dade1b846478334b9195f/honey",
+"yield":4,"dietLabels":["Low-Fat"],"healthLabels":["Vegetarian","Peanut-Free","Tree-Nut-Free",
+"Alcohol-Free"],"cautions":[],"ingredientLines":["1 cup honey","4 star anise","4 cinnamon sticks"],
+"ingredients":[{"text":"1 cup honey","weight":339},{"text":"4 star anise","weight":8},{"text":"4 cinnamon sticks",
+"weight":10.399999618530273}],"calories":1083.2079990577697,"totalWeight":357.3999996185303,
+"bookmarked":false,"bought":false}},
+
+{"recipe":
+{"uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d7dc07bd6b3dade1b846478334b9195f",
+"label":"Infused Honey","image":"https://www.edamam.com/web-img/69e/69e0df7cfa82cc2a10113c1c36cb2d0d.jpg",
+"source":"Martha Stewart",
+"url":"http://www.marthastewart.com/336210/infused-honey",
+"shareAs":"http://www.edamam.com/recipe/infused-honey-d7dc07bd6b3dade1b846478334b9195f/honey",
+"yield":4,"dietLabels":["Low-Fat"],"healthLabels":["Vegetarian","Peanut-Free","Tree-Nut-Free",
+"Alcohol-Free"],"cautions":[],"ingredientLines":["1 cup honey","4 star anise","4 cinnamon sticks"],
+"ingredients":[{"text":"1 cup honey","weight":339},{"text":"4 star anise","weight":8},{"text":"4 cinnamon sticks",
+"weight":10.399999618530273}],"calories":1083.2079990577697,"totalWeight":357.3999996185303,
+"bookmarked":false,"bought":false}},
+
+{"recipe":
+{"uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d7dc07bd6b3dade1b846478334b9195f",
+"label":"Infused Honey","image":"https://www.edamam.com/web-img/69e/69e0df7cfa82cc2a10113c1c36cb2d0d.jpg",
+"source":"Martha Stewart",
+"url":"http://www.marthastewart.com/336210/infused-honey",
+"shareAs":"http://www.edamam.com/recipe/infused-honey-d7dc07bd6b3dade1b846478334b9195f/honey",
+"yield":4,"dietLabels":["Low-Fat"],"healthLabels":["Vegetarian","Peanut-Free","Tree-Nut-Free",
+"Alcohol-Free"],"cautions":[],"ingredientLines":["1 cup honey","4 star anise","4 cinnamon sticks"],
+"ingredients":[{"text":"1 cup honey","weight":339},{"text":"4 star anise","weight":8},{"text":"4 cinnamon sticks",
+"weight":10.399999618530273}],"calories":1083.2079990577697,"totalWeight":357.3999996185303,
+"bookmarked":false,"bought":false}},
+
+{"recipe":
+{"uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d7dc07bd6b3dade1b846478334b9195f",
+"label":"Infused Honey","image":"https://www.edamam.com/web-img/69e/69e0df7cfa82cc2a10113c1c36cb2d0d.jpg",
+"source":"Martha Stewart",
+"url":"http://www.marthastewart.com/336210/infused-honey",
+"shareAs":"http://www.edamam.com/recipe/infused-honey-d7dc07bd6b3dade1b846478334b9195f/honey",
+"yield":4,"dietLabels":["Low-Fat"],"healthLabels":["Vegetarian","Peanut-Free","Tree-Nut-Free",
+"Alcohol-Free"],"cautions":[],"ingredientLines":["1 cup honey","4 star anise","4 cinnamon sticks"],
+"ingredients":[{"text":"1 cup honey","weight":339},{"text":"4 star anise","weight":8},{"text":"4 cinnamon sticks",
+"weight":10.399999618530273}],"calories":1083.2079990577697,"totalWeight":357.3999996185303,
+"bookmarked":false,"bought":false}},
+
+{"recipe":
+{"uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d7dc07bd6b3dade1b846478334b9195f",
+"label":"Infused Honey","image":"https://www.edamam.com/web-img/69e/69e0df7cfa82cc2a10113c1c36cb2d0d.jpg",
+"source":"Martha Stewart",
+"url":"http://www.marthastewart.com/336210/infused-honey",
+"shareAs":"http://www.edamam.com/recipe/infused-honey-d7dc07bd6b3dade1b846478334b9195f/honey",
+"yield":4,"dietLabels":["Low-Fat"],"healthLabels":["Vegetarian","Peanut-Free","Tree-Nut-Free",
+"Alcohol-Free"],"cautions":[],"ingredientLines":["1 cup honey","4 star anise","4 cinnamon sticks"],
+"ingredients":[{"text":"1 cup honey","weight":339},{"text":"4 star anise","weight":8},{"text":"4 cinnamon sticks",
+"weight":10.399999618530273}],"calories":1083.2079990577697,"totalWeight":357.3999996185303,
+"bookmarked":false,"bought":false}}]
+
+export default updatedSampleData;
+
+
+
+
+
+
+
+
+
+/**
 const sampleData = [
   {
     "q": "chicken,broccoli",
@@ -306,3 +388,4 @@ const sampleData = [
 ]// sampldata closing bracket
 
 export default sampleData;
+**/

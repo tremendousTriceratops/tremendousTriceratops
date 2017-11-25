@@ -7,88 +7,22 @@ import Ingredients from './components/Ingredients.jsx';
 import Information from './components/Information.jsx';
 import SearchBar from './components/SearchBar.jsx';
 import ingredientsList from './ingredientsList.js';
+import Instructions from './components/Instructions.jsx';
 
-var sample_data2 = [{"recipe":
-  {"uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d7dc07bd6b3dade1b846478334b9195f",
-  "label":"Infused Honey","image":"https://www.edamam.com/web-img/69e/69e0df7cfa82cc2a10113c1c36cb2d0d.jpg",
-  "source":"Martha Stewart",
-  "url":"http://www.marthastewart.com/336210/infused-honey",
-  "shareAs":"http://www.edamam.com/recipe/infused-honey-d7dc07bd6b3dade1b846478334b9195f/honey",
-  "yield":4,"dietLabels":["Low-Fat"],"healthLabels":["Vegetarian","Peanut-Free","Tree-Nut-Free",
-  "Alcohol-Free"],"cautions":[],"ingredientLines":["1 cup honey","4 star anise","4 cinnamon sticks"],
-  "ingredients":[{"text":"1 cup honey","weight":339},{"text":"4 star anise","weight":8},{"text":"4 cinnamon sticks",
-  "weight":10.399999618530273}],"calories":1083.2079990577697,"totalWeight":357.3999996185303,
-  "bookmarked":false,"bought":false}},
 
-{"recipe":
-{"uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d7dc07bd6b3dade1b846478334b9195f",
-"label":"Infused Honey","image":"https://www.edamam.com/web-img/69e/69e0df7cfa82cc2a10113c1c36cb2d0d.jpg",
-"source":"Martha Stewart",
-"url":"http://www.marthastewart.com/336210/infused-honey",
-"shareAs":"http://www.edamam.com/recipe/infused-honey-d7dc07bd6b3dade1b846478334b9195f/honey",
-"yield":4,"dietLabels":["Low-Fat"],"healthLabels":["Vegetarian","Peanut-Free","Tree-Nut-Free",
-"Alcohol-Free"],"cautions":[],"ingredientLines":["1 cup honey","4 star anise","4 cinnamon sticks"],
-"ingredients":[{"text":"1 cup honey","weight":339},{"text":"4 star anise","weight":8},{"text":"4 cinnamon sticks",
-"weight":10.399999618530273}],"calories":1083.2079990577697,"totalWeight":357.3999996185303,
-"bookmarked":false,"bought":false}},
-
-{"recipe":
-{"uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d7dc07bd6b3dade1b846478334b9195f",
-"label":"Infused Honey","image":"https://www.edamam.com/web-img/69e/69e0df7cfa82cc2a10113c1c36cb2d0d.jpg",
-"source":"Martha Stewart",
-"url":"http://www.marthastewart.com/336210/infused-honey",
-"shareAs":"http://www.edamam.com/recipe/infused-honey-d7dc07bd6b3dade1b846478334b9195f/honey",
-"yield":4,"dietLabels":["Low-Fat"],"healthLabels":["Vegetarian","Peanut-Free","Tree-Nut-Free",
-"Alcohol-Free"],"cautions":[],"ingredientLines":["1 cup honey","4 star anise","4 cinnamon sticks"],
-"ingredients":[{"text":"1 cup honey","weight":339},{"text":"4 star anise","weight":8},{"text":"4 cinnamon sticks",
-"weight":10.399999618530273}],"calories":1083.2079990577697,"totalWeight":357.3999996185303,
-"bookmarked":false,"bought":false}},
-
-{"recipe":
-{"uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d7dc07bd6b3dade1b846478334b9195f",
-"label":"Infused Honey","image":"https://www.edamam.com/web-img/69e/69e0df7cfa82cc2a10113c1c36cb2d0d.jpg",
-"source":"Martha Stewart",
-"url":"http://www.marthastewart.com/336210/infused-honey",
-"shareAs":"http://www.edamam.com/recipe/infused-honey-d7dc07bd6b3dade1b846478334b9195f/honey",
-"yield":4,"dietLabels":["Low-Fat"],"healthLabels":["Vegetarian","Peanut-Free","Tree-Nut-Free",
-"Alcohol-Free"],"cautions":[],"ingredientLines":["1 cup honey","4 star anise","4 cinnamon sticks"],
-"ingredients":[{"text":"1 cup honey","weight":339},{"text":"4 star anise","weight":8},{"text":"4 cinnamon sticks",
-"weight":10.399999618530273}],"calories":1083.2079990577697,"totalWeight":357.3999996185303,
-"bookmarked":false,"bought":false}},
-
-{"recipe":
-{"uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d7dc07bd6b3dade1b846478334b9195f",
-"label":"Infused Honey","image":"https://www.edamam.com/web-img/69e/69e0df7cfa82cc2a10113c1c36cb2d0d.jpg",
-"source":"Martha Stewart",
-"url":"http://www.marthastewart.com/336210/infused-honey",
-"shareAs":"http://www.edamam.com/recipe/infused-honey-d7dc07bd6b3dade1b846478334b9195f/honey",
-"yield":4,"dietLabels":["Low-Fat"],"healthLabels":["Vegetarian","Peanut-Free","Tree-Nut-Free",
-"Alcohol-Free"],"cautions":[],"ingredientLines":["1 cup honey","4 star anise","4 cinnamon sticks"],
-"ingredients":[{"text":"1 cup honey","weight":339},{"text":"4 star anise","weight":8},{"text":"4 cinnamon sticks",
-"weight":10.399999618530273}],"calories":1083.2079990577697,"totalWeight":357.3999996185303,
-"bookmarked":false,"bought":false}},
-
-{"recipe":
-{"uri":"http://www.edamam.com/ontologies/edamam.owl#recipe_d7dc07bd6b3dade1b846478334b9195f",
-"label":"Infused Honey","image":"https://www.edamam.com/web-img/69e/69e0df7cfa82cc2a10113c1c36cb2d0d.jpg",
-"source":"Martha Stewart",
-"url":"http://www.marthastewart.com/336210/infused-honey",
-"shareAs":"http://www.edamam.com/recipe/infused-honey-d7dc07bd6b3dade1b846478334b9195f/honey",
-"yield":4,"dietLabels":["Low-Fat"],"healthLabels":["Vegetarian","Peanut-Free","Tree-Nut-Free",
-"Alcohol-Free"],"cautions":[],"ingredientLines":["1 cup honey","4 star anise","4 cinnamon sticks"],
-"ingredients":[{"text":"1 cup honey","weight":339},{"text":"4 star anise","weight":8},{"text":"4 cinnamon sticks",
-"weight":10.399999618530273}],"calories":1083.2079990577697,"totalWeight":357.3999996185303,
-"bookmarked":false,"bought":false}}]
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       items: [],
-      data:sample_data2,
+      data:sample_data,
       listDataFromRecipe:[],
       listDataFromObj:null,
-      isRecipeClicked:false
+
+      isRecipeClicked:false,
+      isRecipeUrl:''
+
     }
 
     this.recipeHandle = this.recipeHandle.bind(this);
@@ -100,6 +34,7 @@ class App extends React.Component {
     this.setState({
       listDataFromRecipe:data,
       listDataFromObj:dataObj,
+      isRecipeUrl:dataObj.recipe.url,
       isRecipeClicked:true
     });
   }
@@ -144,20 +79,24 @@ class App extends React.Component {
    let ingredient = null;
    let information = null;
    if(isRecipeClicked){
-     ingredient = <Ingredients className='Ingredients' listData={this.state.listDataFromRecipe}  />
+     ingredient = <Ingredients className='Ingredients col-md-4 ' listData={this.state.listDataFromRecipe}  />
      // information = <Information listInfo={this.state.listDataFromObj}/>
    }
 
     return (
       <div className="container-fluid">
+      <h1> Add Sweet title here </h1>
       <SearchBar ingredientsList = {ingredientsList} searchBarClicked = {this.searchBarClicked} filterSearch = {this.filterSearch}/>
 
       <RecipeTile data={this.state.data} recipeHandle={this.recipeHandle}/>
       {/* <Ingredients listData={this.state.listDataFromRecipe}  /> */}
-        <div>
+        <div className="container bottom-half">
+          <div className="row">
           {ingredient}
           {/* {information} */}
           <Information className='information' listInfo={this.state.listDataFromObj}/>
+          <Instructions className="instructions" url={this.state.isRecipeUrl} />
+         </div>
         </div>
     </div>
     )

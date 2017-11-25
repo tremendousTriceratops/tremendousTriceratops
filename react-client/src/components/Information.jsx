@@ -30,25 +30,31 @@ class Information extends React.Component {
     {console.log(this.props.listInfo)}
     console.log(this.state.healthLabels);
     return(
-      <div>
+      <div className="col-md-4  inf-div">
         {this.state.calories ?
-        <div>
-          <ul>Health Labels
+        <div className="list-group info-container">
+          <div className="d-flex w-100 justify-content-center">
+            <h5 className="mb-1">Health Labels</h5>
+          </div>
           {this.state.healthLabels.map((item,i)=>{
-            return <li key={i}>{item}</li>
+            return <p className="mb-1 inf-li" key={i}>{item}</p>
           })}
-          </ul>
-          <ul>Cautions
+          <div className="d-flex w-100 justify-content-center">
+
+            <h5 className="mb-1">Cautions</h5>
+          </div>
           {this.state.cautions.map((item,i)=>{
-            return <li key={i}>{item}</li>
+            return <p className="inf-li" key={i}>{item}</p>
           })}
-          </ul>
-          <ul>Servings
-          <li>{this.state.servings}</li>
-          </ul>
-          <ul>calories
-          <li>{this.state.calories ? this.state.calories : 'loading'} </li>
-          </ul>
+          <div className="d-flex w-100 justify-content-center">
+            <h5 className="mb-1">Servings</h5>
+          </div>
+          <p className="inf-li">{this.state.servings}</p>
+          <div className="d-flex w-100 justify-content-center">
+            <h5 className="mb-1">calories</h5>
+          </div>
+          <p className="inf-li">{this.state.calories ? this.state.calories : 'loading'} </p>
+
 
         </div>
        : null}
@@ -59,6 +65,25 @@ class Information extends React.Component {
 
 
 }
+{/* <div>
+  <ul className="list">Health Labels
+  {this.state.healthLabels.map((item,i)=>{
+    return <li className="inf-li" key={i}>{item}</li>
+  })}
+  </ul>
+  <ul className="list">Cautions
+  {this.state.cautions.map((item,i)=>{
+    return <li className="inf-li" key={i}>{item}</li>
+  })}
+  </ul>
+  <ul className="list">Servings
+  <li className="inf-li">{this.state.servings}</li>
+  </ul>
+  <ul className="list">calories
+  <li className="inf-li">{this.state.calories ? this.state.calories : 'loading'} </li>
+  </ul>
+
+</div> */}
 
 
 
