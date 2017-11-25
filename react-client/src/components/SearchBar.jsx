@@ -28,7 +28,9 @@ class SearchBar extends React.Component {
     			<div className="col-6">
     				<div className="input-group input-group-lg">
   						<input onChange = {(e)=> this.setState({text: e.target.value})} type="text" className="form-control" placeholder="Search by keyword" aria-describedby="sizing-addon1"/>
-							<button onClick = {() => this.props.searchBarClicked(this.state.text)} type="button" className="btn btn-primary">Search</button>
+
+							<button onClick = {() => this.props.searchBarClicked(this.state.text)} type="button" className="btn btn-primary">  						<span className=" glyphicon glyphicon-search"></span>
+</button>
 						</div>
     			</div>
     			<div className="col-2">
@@ -48,6 +50,10 @@ class SearchBar extends React.Component {
 						</div>
     			</div>
   			</div>
+
+
+
+
   			{this.state.filterBox ? <SearchCheckList ingredientsList = {this.props.ingredientsList} filterSearchClicked = {this.filterSearchClicked}/> : <div></div>}
 			</div>
 		)

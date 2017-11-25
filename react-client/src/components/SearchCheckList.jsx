@@ -16,9 +16,14 @@ class SearchBar extends React.Component {
 	}
 
 	boxClicked(info) {
-		var oldArray = this.state.checked;
-		oldArray.push(info);
-		this.setState({checked: oldArray});
+		if(this.state.checked.includes(info)) {
+			const removeChecked = this.state.checked.filter(el => el !== info)
+			this.setState({checked: removeChecked})
+		} else {
+			var oldArray = this.state.checked;
+			oldArray.push(info);
+			this.setState({checked: oldArray});
+		}
 	}
 
 	render() {
@@ -26,6 +31,8 @@ class SearchBar extends React.Component {
 		return (
 			<div className="container">
 			  <div className="row">
+			  	<button onClick = {()=> this.setState({checked:[]})} type="button" className="btn btn-primary btn-lg btn-block">Clear All</button>
+
 			    <div className="col-sm-2">
 			    	<span className="badge badge-primary">Baking Products</span>
 				    {this.props.ingredientsList.bakingProducts.map((el, index) => <CheckBox i = {el} key = {index} boxClicked = {this.boxClicked}/>)}
