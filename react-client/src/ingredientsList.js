@@ -7,7 +7,7 @@ var ingredients = {
   ],
   spiceBlends: [ 'chili powder', 'curry powder', 'italian seasoning', 'vanilla extract'],
   cannedBeans: [ 'black beans', 'chickpeas', 'kidney beans'],
-  cannedGoods: [ 'capers', 'olives', 'peanut butter', 'preserves or jelly', ' low-sodium stock or broth', 'canned tomatoes',
+  cannedGoods: [ 'capers', 'olives', 'peanut butter', 'preserves or jelly', 'broth', 'canned tomatoes',
     'tomatoes', 'canned and paste', 'salsa', 'tuna'],
   grains: ['pasta', 'breadcrumbs', 'dried lentils'],
   bakingProducts: ['baking powder', 'baking soda', 'brown sugar', 'cornstarch', 'flour', 'sugar', 'honey'],

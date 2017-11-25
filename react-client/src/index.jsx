@@ -31,6 +31,7 @@ class App extends React.Component {
   }
 
   recipeHandle(data,dataObj){
+    console.log('clickedME')
     this.setState({
       listDataFromRecipe:data,
       listDataFromObj:dataObj,
