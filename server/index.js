@@ -2,6 +2,12 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var request = require('request');
 var apiHelper = require('./apiHelper.js');
+//const pg = require('pg');
+const db = require('../database-postgresql/index');
+
+
+// Connect to DATABASE
+db.connect();
 
 //*********************************************************************************************************
 //DATABASE HELPER FUNCTIONS NEEDED:
